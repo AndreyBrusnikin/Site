@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js'></script>
+    <script src="./js/gijgo.js" type="text/javascript"></script>
+    <script src="./js/Popover.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg pb-3">
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse"
+                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse flex-column align-items-end navbar-dark " id="navbarCollapse">
+
+                    <ul class="navbar-nav  mt-0 dropdown-border bg-dark">
+                        <li class="nav-item dropdown dropdown-style">
+                            <a class="nav-link custom-dropdown-toggle-nav" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-user mr-2"></i>My Account</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">About</a>
+                                <a class="dropdown-item" href="#">History</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Exit</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-style">
+                            <a class="nav-link custom-dropdown-toggle-nav" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>EN</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ru"> </span>RU</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ua"> </span>UA</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-de"> </span>GER</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-style">
+                            <a class="nav-link custom-dropdown-toggle-nav" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NZD ($)</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">NZD ($)</a>
+                                <a class="dropdown-item" href="#">NZD ($)</a>
+                                <a class="dropdown-item" href="#">NZD ($)</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="navbar-nav mb-lg-0 mobile-phone">
+                        <a class="nav-item  " href="#">+31-20-5313300 </a>
+                        <p>free call</p>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="search-form" style="background:url(images/map.png)90% 12% , url(images/bg-map.jpg) repeat">
+        <div class="container">
+            <ul class="nav flex-sm-row align-items-center justify-content-around pb-3">
+                <li class="custom-checkmark" title="No booking fees">
+                    <a class="link-search" href="#">No booking fees</a>
+                </li>
+                <li class="custom-checkmark" title="No cancelation fees">
+                    <a class="link-search" href="#">No cancelation fees</a>
+                </li>
+                <li class=" custom-checkmark" title="Secure online booking">
+                    <a class="link-search" href="#"> Secure online booking </a>
+                </li>
+                <li class="custom-checkmark" title="Instant email confirmation">
+                    <a class="link-search" href="#">Instant email confirmation</a>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" class=" form-inline justify-content-between form-holder">
+
+                        <input type="text" class="form-control mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1"
+                               placeholder="Auckland, New Zealand">
+                       <!-- <input type="text" class="form-control  mb-2 mb-md-0 mr-sm-2 "
+                               placeholder="Jan 27-29 Jan ">-->
+                        <div class="d-flex flex-grow-1 flex-shrink-1 mb-2 mt-md-2  ">
+                        <input id="datepicker" class="form-control  mb-md-0  flex-grow-1 flex-shrink-1" placeholder="01/01/2019" />
+                        </div>
+
+                        <!--<input type="text" class="form-control  mb-2 mb-md-0 mr-sm-2 flex-grow-1 flex-shrink-1"-->
+                               <!--placeholder="2 Adults & Kids"> <i class="icon-adult"></i>-->
+                        <div class="d-flex flex-grow-1 flex-shrink-1 mb-2 mt-md-2  ">
+                            <span class="trigger d-flex flex-wrap flex-grow-1 flex-shrink-1 mb-2 mb-md-0 ">
+                                  <input type="text" name="pax" id="pax" class="form-control flex-grow-1 flex-shrink-1 mr-2" data-adults="1" data-children="0" data-total="1" placeholder="Total: 1 • Adults: 1 • Kids: 0" disabled>
+
+                                  
+                            </span>
+                        <div class="popover-content d-none">
+                            <div class="form-group">
+                                <label for="adult"><i class="fas fa-male"></i> Adults <i>(Age: 18+)</i></label>
+                                <div class="input-group number-spinner">
+                                    <a class="btn btn-primary" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                    <input type="text" name="adult" id="adult" class="form-control text-center" value="1" max="9" min="1" disabled>
+                                    <a class="btn btn-primary" data-dir="up"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="child"><i class="fas fa-child"></i> Kids <i>(Age: 12-17)</i></label>
+                                    <div class="input-group number-spinner">
+                                        <a class="btn btn-primary" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                        <input type="text" name="child" id="child" class="form-control text-center" value="0" max="9" min="0" disabled>
+                                        <a class="btn btn-primary" data-dir="up"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary btn-block dismiss">Save</a>
+                        </div>
+
+                        <button type="button" class="btn btn-warning btn-search mb-2 mb-md-0 mr-sm-2">
+                            <span class="icon"></span> Search
+                        </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="bg-image">
+            <div class="container">
+                <div class="btn-group drop-down-sort" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-dark custom-dropdown-toggle"
+                                data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            SORT BY:
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">link1</a>
+                            <a class="dropdown-item" href="#">link2</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-dark custom-dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ROOM TYPE:
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">link1</a>
+                            <a class="dropdown-item" href="#">link2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 col-md-9 room-card d-flex flex-wrap">
+                        <div class="col-12 p-0 ">
+                            <div class="sort-form mb-4 d-flex flex-wrap justify-content-between">
+                                <div class=" d-flex flex-wrap justify-content-sm-start justify-content-md-around flex-grow-1">
+                                <h2>Auckland</h2>
+                                <p><span class="ml-2">108</span> hotels available</p>
+                                </div>
+                                <div class="icon-sort flex-wrap justify-content-sm-start  d-flex justify-content-md-around flex-grow-1 ">
+                                    <button type="button" class="btn btn-success btn-sm mr-3">Compare Shortlist Hotel
+                                    </button>
+                                    <div class="d-flex mt-2  mt-md-0">
+                                        <a href="#" class="icon-border"><i class="icon-list"></i></a>
+                                        <a href="#" class="icon-border"><i class="icon-hotel"></i></a>
+                                        <a href="#" class="icon-border"><i class="icon-menu"></i></a>
+                                        <a href="#" class="icon-border"><i class="icon-loc"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class=" card text-center">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Scenic Hotel Auckland</h3>
+                                </div>
+                                <div class="image-holder">
+                                <img src="images/room1.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title ce d-flex  justify-content-center align-items-center">
+                                        <h4 class="pr-1">$NZ</h4><h2>240</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class="card text-center">
+                                <div class="card-title-custom al">
+                                <h3 class="">Mercure Hotel</h3>
+                                </div>
+                                <div class="image-holder">
+                                    <img src="images/room2.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center">
+                                        <h4 class="pr-1">$NZ</h4><h2>120</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class=" card text-center">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Best Western Ellersli...</h3>
+                                </div>
+                                <div class="image-holder">
+                                    <img src="images/room3.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center">
+                                    <h4 class="pr-1">$NZ</h4><h2>85</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class=" card text-center">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Scenic Hotel Auckland</h3>
+                                </div>
+                               <div class="image-holder">
+                                    <img src="images/room1.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center">
+                                        <h4 class="pr-1">$NZ</h4><h2>240</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class="card text-center">
+                                <div class="card-holer">
+                                    <img src="images/Recomended.png" alt="Recomended" class="recomend">
+                                    <div class="card-title-custom al">
+                                        <h3 class="">Mercure Hotel</h3>
+                                    </div>
+                                    <div class="image-holder">
+                                        <img src="images/room2.jpg" class="card-img-top p-1" alt="...">
+                                        <div class="card-rait m-1 d-flex justify-content-between">
+                                            <div class="rait">
+                                                <div id="full-stars-example-two2">
+                                                    <div class="rating-group2">
+                                                        <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                               id="rating53-none" value="0" type="radio">
+                                                        <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                                class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                        <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                               type="radio">
+                                                        <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                                class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                        <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                               type="radio">
+                                                        <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                                class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                        <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                               type="radio">
+                                                        <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                                class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                        <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                               type="radio">
+                                                        <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                                class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                        <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                               type="radio">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span>650 reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title ce d-flex justify-content-center align-items-center">
+                                            <h4 class="pr-1">$NZ</h4><h2>120</h2>
+                                        </div>
+                                        <p class="card-text text-center">Apartment...></p>
+                                        <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class=" card text-center">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Best Western Ellersli...</h3>
+                                </div>
+                                <div class="image-holder">
+                                    <img src="images/room3.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center">
+                                        <h4 class="pr-1">$NZ</h4><h2>85</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class=" card text-center">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Scenic Hotel Auckland</h3>
+                                </div>
+                                    <div class="image-holder">
+                                    <img src="images/room1.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center fle">
+                                        <h4 class="pr-1">$NZ</h4><h2>240</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class="card text-center">
+                                <div class="card-holer">
+                                    <img src="images/offer.png" alt="Offers" class="offers">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Mercure Hotel</h3>
+                                </div>
+                                 <div class="image-holder">
+                                    <img src="images/room2.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center">
+                                        <h4 class="pr-1">$NZ</h4><h2>120</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 pb-2 p-md-2">
+                            <div class=" card text-center">
+                                <div class="card-title-custom al">
+                                    <h3 class="">Best Western Ellersli...</h3>
+                                </div>
+                               <div class="image-holder">
+                                    <img src="images/room3.jpg" class="card-img-top p-1" alt="...">
+                                    <div class="card-rait m-1 d-flex justify-content-between">
+                                        <div class="rait">
+                                            <div id="full-stars-example-two2">
+                                                <div class="rating-group2">
+                                                    <input disabled checked class="rating__input2 rating__input2--none" name="rating53"
+                                                           id="rating53-none" value="0" type="radio">
+                                                    <label aria-label="1 star" class="rating__label2" for="rating53-1"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-1" value="1"
+                                                           type="radio">
+                                                    <label aria-label="2 stars" class="rating__label2" for="rating53-2"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-2" value="2"
+                                                           type="radio">
+                                                    <label aria-label="3 stars" class="rating__label2" for="rating53-3"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-3" value="3"
+                                                           type="radio">
+                                                    <label aria-label="4 stars" class="rating__label2" for="rating53-4"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-4" value="4"
+                                                           type="radio">
+                                                    <label aria-label="5 stars" class="rating__label2" for="rating53-5"><i
+                                                            class="rating__icon2 rating__icon2--star fa fa-star"></i></label>
+                                                    <input class="rating__input2" name="rating53" id="rating53-5" value="5"
+                                                           type="radio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>650 reviews</span>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="card-title ce d-flex justify-content-center align-items-center">
+                                        <h4 class="pr-1">$NZ</h4><h2>85</h2>
+                                    </div>
+                                    <p class="card-text text-center">Apartment...></p>
+                                    <a href="#" class="btn btn-warning btn-color">BOOK IT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="right-nav shadow">
+                            <div class="col-12 pt-3 border-bottom d-flex justify-content-between">
+                                <h4>Star Rating</h4>
+                                <div id="full-stars-example-two">
+                                    <div class="rating-group">
+                                        <input disabled checked class="rating__input rating__input--none" name="rating3"
+                                               id="rating3-none" value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating3-1"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-1" value="1"
+                                               type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-2" value="2"
+                                               type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-3" value="3"
+                                               type="radio">
+                                        <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-4" value="4"
+                                               type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
+                                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-5" value="5"
+                                               type="radio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pt-3 border-bottom d-flex justify-content-between">
+                                <h4>Guest Rating</h4>
+                                <div id="full-square-example-two">
+                                    <div class="rating-group1">
+                                        <input disabled checked class="rating__input1 rating__input1--none"
+                                               name="rating3" id="rating3-none" value="0" type="radio">
+                                        <label aria-label="11 square" class="rating__label1" for="rating3-11"><i
+                                                class="rating__icon1 rating__icon1--square fas fa-square"></i></label>
+                                        <input class="rating__input1" name="rating33" id="rating3-11" value="11"
+                                               type="radio">
+                                        <label aria-label="22 square" class="rating__label1" for="rating3-22"><i
+                                                class="rating__icon1 rating__icon1--square fas fa-square"></i></label>
+                                        <input class="rating__input1" name="rating33" id="rating3-22" value="22"
+                                               type="radio">
+                                        <label aria-label="33 square" class="rating__label1" for="rating3-33"><i
+                                                class="rating__icon1 rating__icon1--square fas fa-square"></i></label>
+                                        <input class="rating__input1" name="rating33" id="rating3-33" value="33"
+                                               type="radio">
+                                        <label aria-label="44 square" class="rating__label1" for="rating3-44"><i
+                                                class="rating__icon1 rating__icon1--square fas fa-square"></i></label>
+                                        <input class="rating__input1" name="rating33" id="rating3-44" value="44"
+                                               type="radio">
+                                        <label aria-label="55 square" class="rating__label1" for="rating3-55"><i
+                                                class="rating__icon1 rating__icon1--square fas fa-square"></i></label>
+                                        <label aria-label="55 square" class="rating__label1" for="rating3-55"><i
+                                                class="rating__icon1 rating__icon1--square fas fa-square"></i></label>
+                                        <input class="rating__input1" name="rating33" id="rating3-55" value="55"
+                                               type="radio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pt-3 border-bottom">
+                                <h4>Price Range</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="range" class="form-control-range" id="formControlRange">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <div class="accordin">
+                                    <div class="checkbox-nav pt-4 pb-3 border-bottom">
+                                        <div class="card-header p-0 collapsed d-flex justify-content-between "  data-toggle="collapse"
+                                             data-target="#collapse-card-1 "  >
+                                            <h4>Friendly!?</h4>
+                                            <span>
+                                                 <i class="fas fa-angle-up"></i>
+                                             </span>
+                                        </div>
+                                        <div id="collapse-card-1" class="collapse" data-parent=".accordin">
+                                            <div class="card-body p-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Family friendly(96)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck2">
+                                                        Pet friendly(8)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                    <label class="form-check-label" for="defaultCheck3">
+                                                        Gay friendly(5)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                    <label class="form-check-label" for="defaultCheck4">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-nav pt-4 pb-3 border-bottom">
+                                        <div class="card-header collapsed p-0 d-flex justify-content-between" data-toggle="collapse"
+                                             data-target="#collapse-card-2 ">
+                                            <h4>Amenities</h4>
+                                            <span>
+                                                <i class="fas fa-angle-down"></i>
+                                            </span>
+                                        </div>
+                                        <div id="collapse-card-2" class="collapse">
+                                            <div class=" p-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                                    <label class="form-check-label" for="defaultCheck5">
+                                                        Family friendly(96)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                                    <label class="form-check-label" for="defaultCheck6">
+                                                        Pet friendly(8)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                                                    <label class="form-check-label" for="defaultCheck7">
+                                                        Gay friendly(5)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                                                    <label class="form-check-label" for="defaultCheck8">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                                                    <label class="form-check-label" for="defaultCheck9">
+                                                        Family friendly(96)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Pet friendly(8)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                                <label class="form-check-label" for="defaultCheck11">
+                                                    Gay friendly(5)
+                                                </label>
+                                            </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                                    <label class="form-check-label" for="defaultCheck12">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                                                    <label class="form-check-label" for="defaultCheck13">
+                                                        Gay friendly(5)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                                                    <label class="form-check-label" for="defaultCheck14">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-nav pt-4 pb-3 ">
+                                        <div class="card-header p-0 collapsed d-flex justify-content-between" data-toggle="collapse"
+                                             data-target="#collapse-card-3" >
+                                            <h4>Accommodation Type</h4>
+                                            <span>
+                                                <i class="fas fa-angle-up"></i>
+                                            </span>
+                                        </div>
+                                        <div id="collapse-card-3" class="collapse">
+                                            <div class="card-body p-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                                                    <label class="form-check-label" for="defaultCheck15">
+                                                        Family friendly(96)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                                                    <label class="form-check-label" for="defaultCheck16">
+                                                        Pet friendly(8)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                                                    <label class="form-check-label" for="defaultCheck17">
+                                                        Gay friendly(5)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                                                    <label class="form-check-label" for="defaultCheck18">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                                                    <label class="form-check-label" for="defaultCheck19">
+                                                        Family friendly(96)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                                                    <label class="form-check-label" for="defaultCheck20">
+                                                        Pet friendly(8)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                                                    <label class="form-check-label" for="defaultCheck21">
+                                                        Gay friendly(5)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+                                                    <label class="form-check-label" for="defaultCheck22">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                                                    <label class="form-check-label" for="defaultCheck23">
+                                                        Gay friendly(5)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                                                    <label class="form-check-label" for="defaultCheck24">
+                                                        Disabled Facility’s(32)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content" style="background:url(images/city.png) repeat-x bottom, url(images/bg-map.jpg) repeat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h5>if you cancel in the hotels cancellation period*</h5>
+                    <div class="footer-nav-left d-flex flex-wrap justify-content-between  mt-3 ">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a  href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="#">Privacy and Cookies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a  href="#">Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="#">Help and FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="#">Customer Service</a>
+                            </li>
+                        </ul>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a  href="#">My Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="#">Add your Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="#">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-3  mt-md-0">
+                        <h5>Go to search results in</h5>
+                        <div class="footer-nav-right d-flex flex-wrap justify-content-start  mt-3 ">
+                            <ul class="nav flex-column">
+                                <li class="nav-item flag-nav">
+                                    <a href="#"><span class="flag-icon flag-icon-us mr-3"> </span>English</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-nl mr-3"> </span>Ntherlands</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-es mr-3"> </span>Espanol</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-de mr-3"> </span>Deutsch</a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column">
+                                <li class="nav-item flag-nav ">
+                                    <a  href="#"><span class="flag-icon flag-icon-it mr-3"> </span>Italiano</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-jp mr-3"> </span>Japanese</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-fr mr-3"> </span>Francais</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-ru mr-3"> </span>Lorem</a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column">
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-se mr-3"> </span>Svenska</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-pt mr-3"> </span>Portugues</a>
+                                </li>
+                                <li class="nav-item flag-nav">
+                                    <a  href="#"><span class="flag-icon flag-icon-sj mr-3"> </span>Norsk</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                    <div class="trip col-12 d-flex flex-wrap justify-content-end ">
+                        <h5>Hotel reviews powered by</h5><img class="pl-3 pr-2" src="images/trip-advisor.png" alt="">
+                    </div>
+            </div>
+        </div>
+        </div>
+        </div>
+            <div class="footer-holder" style="background:url(images/footer-city.png) repeat-x top">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-12 pl-2 pr-2 d-flex copyright justify-content-between">
+                            <p><b>2013</b>   © Hotelbooking.com  </p>
+                            <div class="social">
+                                <a href="#"><img src="images/facebook.jpg" alt="facebook"></a>
+                                <a href="#"><img src="images/tweet.jpg" alt="Tweeter"></a>
+                                <a href="#"><img src="images/google.jpg" alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+<script >
+    var options = {
+        content: function() {
+            return $(this).parent().find('.popover-content').html();
+        },
+        html: true,
+        placement: 'bottom',
+    };
+    var $popover = $('.trigger').popover(options);
+
+    // Open Popover
+    var pax = [1,0];
+    $('.trigger').click(function(e) {
+        e.stopPropagation();
+        $('.popover-body input').each(function(i) {
+            $(this).val(pax[i]);
+        });
+    });
+
+    // Close Popover
+    $(document).click(function(e) {
+        if($(e.target).hasClass('dismiss')) {
+            $('.trigger').popover('hide');
+        }
+    });
+
+    // On Close Store Values
+    $popover.on('hide.bs.popover', function(e) {
+        $('.popover-body input').each(function(i) {
+            pax[i] = $(this).val();
+        });
+    });
+
+    // Change Values on + & - Button Clicks
+    $(document).on('click', '.number-spinner a', function() {
+        var btn = $(this),
+            input = btn.closest('.number-spinner').find('input'),
+            oldValue = input.val().trim(),
+            inputPax = $('#pax'),
+            dataTotal = parseInt(inputPax.attr('data-total')),
+            dataAdults = parseInt(inputPax.attr('data-adults')),
+            dataChildren = parseInt(inputPax.attr('data-children'));
+
+        if(btn.attr('data-dir') == 'up') {
+            if(oldValue < input.attr('max')) {
+                oldValue++;
+
+                if(input.attr('id') === 'adult') {
+                    dataAdults++
+                    inputPax.attr('data-adults', dataAdults);
+                    console.log('Adult added! The new adult total is: ' + dataAdults);
+                } else if(input.attr('id') === 'child') {
+                    dataChildren++
+                    inputPax.attr('data-children', dataChildren);
+                    console.log('Child added! The new child total is: ' + dataChildren);
+                }
+            }
+        } else {
+            if(oldValue > input.attr('min')) {
+                oldValue--;
+
+                if(input.attr('id') === 'adult') {
+                    dataAdults--
+                    inputPax.attr('data-adults', dataAdults);
+                    console.log('Adult added! The new adult total is: ' + dataAdults);
+                } else if(input.attr('id') === 'child') {
+                    dataChildren--
+                    inputPax.attr('data-children', dataChildren);
+                    console.log('Child added! The new child total is: ' + dataChildren);
+                }
+            }
+        }
+        dataTotal = dataAdults + dataChildren;
+        inputPax.attr('data-total', dataTotal);
+        inputPax.attr('placeholder', 'Total: ' + dataTotal + ' • Adults: ' + dataAdults + ' • Children: ' + dataChildren);
+
+        input.val(oldValue);
+    });
+
+    // Show Popover On Startup
+    // $('.trigger').popover('show')
+
+
+</script>
+<script>
+    $('#datepicker').datepicker({
+
+        uiLibrary: 'bootstrap4'
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
