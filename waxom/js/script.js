@@ -2,11 +2,22 @@ $('#toggle-search').on('click', function() {
     $('#searchBar').toggle('display: inline-block');
 });
 
+jQuery(function($){
+    $(document).mouseup(function (e){
+        var div = $("#searchBar");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            div.fadeOut("fast");
+        }
+    });
+});
+
 $(document).ready(function(){
     $('#owlcarousel1').owlCarousel({
         loop:true,
         margin:0,
         nav:false,
+        transitionStyle : "fade",
         responsive:{
             0:{
                 items:1
@@ -53,8 +64,6 @@ wow.init();
 
 $(document).ready(function(){
 
-
-
     var $container = $('.portfolioContainer');
     $container.isotope({
         filter: '*',
@@ -62,6 +71,7 @@ $(document).ready(function(){
             duration: 750,
             easing: 'linear',
             queue: false
+
         }
     });
 
@@ -146,4 +156,5 @@ $('.counter').counterUp({
    delay: 5,
    time: 1000
 });
+
 
