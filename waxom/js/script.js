@@ -91,10 +91,6 @@ $(document).ready(function(){
         return false;
 
     });
-
-        $container.imagesLoaded().progress(function() {
-        $container.fadeIn(1000).isotope('layout');
-    });
 });
 
 
